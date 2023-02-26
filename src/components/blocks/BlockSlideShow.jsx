@@ -20,33 +20,38 @@ const slickSettings = {
 };
 
 export default class BlockSlideShow extends Component {
+  constructor(props) {
+    super(props);
+  }
   departmentsAreaRef = null;
 
   media = window.matchMedia("(min-width: 992px)");
 
-  slides = [
-    {
-      title: "Big choice of<br>Plumbing products",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
-      image_classic: "images/slides/slide-1.jpg",
-      image_full: "images/slides/slide-1-full.jpg",
-      image_mobile: "images/slides/slide-1-mobile.jpg",
-    },
-    {
-      title: "Screwdrivers<br>Professional Tools",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
-      image_classic: "images/slides/slide-2.jpg",
-      image_full: "images/slides/slide-2-full.jpg",
-      image_mobile: "images/slides/slide-2-mobile.jpg",
-    },
-    {
-      title: "One more<br>Unique header",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
-      image_classic: "images/slides/slide-3.jpg",
-      image_full: "images/slides/slide-3-full.jpg",
-      image_mobile: "images/slides/slide-3-mobile.jpg",
-    },
-  ];
+  slides = this.props.slides
+    ? this.props.slides
+    : [
+        {
+          title: "Big choice of<br>Plumbing products",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
+          image_classic: "images/slides/slide-1.jpg",
+          image_full: "images/slides/slide-1-full.jpg",
+          image_mobile: "images/slides/slide-1-mobile.jpg",
+        },
+        {
+          title: "Screwdrivers<br>Professional Tools",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
+          image_classic: "images/slides/slide-2.jpg",
+          image_full: "images/slides/slide-2-full.jpg",
+          image_mobile: "images/slides/slide-2-mobile.jpg",
+        },
+        {
+          title: "One more<br>Unique header",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
+          image_classic: "images/slides/slide-3.jpg",
+          image_full: "images/slides/slide-3-full.jpg",
+          image_mobile: "images/slides/slide-3-mobile.jpg",
+        },
+      ];
 
   componentDidMount() {
     if (this.media.addEventListener) {
