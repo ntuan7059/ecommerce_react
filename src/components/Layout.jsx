@@ -39,6 +39,8 @@ import ShopPageCategory from "./shop/ShopPageCategory";
 import theme from "../data/theme";
 import Introduce from "../page/Introduce";
 import HomePageOne from "./home/HomePageOne";
+import News from "../page/News";
+import Contact from "../page/Contact";
 
 function Layout(props) {
   const { match, headerLayout, homeComponent } = props;
@@ -76,6 +78,8 @@ function Layout(props) {
                         */}
             <Route exact path="/gioithieu" render={(props) => <Introduce />} />
             <Route exact path="/sanpham" render={(props) => <HomePageOne />} />
+            <Route exact path="/tintuc" render={(props) => <News />} />
+            <Route exact path="/lienhe" render={(props) => <Contact />} />
             <Route exact path="/shop/cart" component={PageCart} />
             <Route exact path="/shop/checkout" component={PageCheckout} />
             <Route exact path="/shop/wishlist" component={PageWishlist} />
