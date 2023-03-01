@@ -41,6 +41,7 @@ import Introduce from "../page/Introduce";
 import HomePageOne from "./home/HomePageOne";
 import News from "../page/News";
 import Contact from "../page/Contact";
+import Solution from "../page/Solution";
 
 function Layout(props) {
   const { match, headerLayout, homeComponent } = props;
@@ -80,6 +81,7 @@ function Layout(props) {
             <Route exact path="/sanpham" render={(props) => <HomePageOne />} />
             <Route exact path="/tintuc" render={(props) => <News />} />
             <Route exact path="/lienhe" render={(props) => <Contact />} />
+            <Route exact path="/giaiphap" render={(props) => <Solution />} />
             <Route exact path="/shop/cart" component={PageCart} />
             <Route exact path="/shop/checkout" component={PageCheckout} />
             <Route exact path="/shop/wishlist" component={PageWishlist} />
