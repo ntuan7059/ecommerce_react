@@ -66,7 +66,7 @@ function HomePageOne() {
         categories={categories}
       />
 
-      <BlockTabbedProductsCarousel
+      {/* <BlockTabbedProductsCarousel
         title="New Arrivals"
         layout="horizontal"
         rows={2}
@@ -74,7 +74,7 @@ function HomePageOne() {
 
       <BlockPosts title="Latest News" layout="list-sm" posts={posts} />
 
-      <BlockProductColumns columns={columns} />
+      <BlockProductColumns columns={columns} /> */}
     </React.Fragment>
   );
 }
