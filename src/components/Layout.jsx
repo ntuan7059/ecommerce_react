@@ -42,6 +42,7 @@ import HomePageOne from "./home/HomePageOne";
 import News from "../page/News";
 import Contact from "../page/Contact";
 import Solution from "../page/Solution";
+import NewsDetail from "../page/NewsDetail";
 
 function Layout(props) {
   const { match, headerLayout, homeComponent } = props;
@@ -91,6 +92,8 @@ function Layout(props) {
               path="/shop/track-order"
               component={ShopPageTrackOrder}
             />
+            <Route exact path="/details" component={NewsDetail} />
+
             {/*
                         // Blog
                         */}

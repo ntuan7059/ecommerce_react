@@ -42,7 +42,7 @@ function Solution() {
                   <AiFillDribbbleCircle size={70} />
                 </div>
                 <h4>
-                  <a href="">Dự toán nhà phố thông minh</a>
+                  <a href="/details">Dự toán nhà phố thông minh</a>
                 </h4>
                 <p>
                   Nhà thông minh đã trở nên phổ biến với mọi gia đình Việt. Chỉ
@@ -66,7 +66,7 @@ function Solution() {
                   <AiFillDropboxCircle size={70} />
                 </div>
                 <h4>
-                  <a href="">Dự toán chung cư thông minh</a>
+                  <a href="/details">Dự toán chung cư thông minh</a>
                 </h4>
                 <p>
                   Để nhà thông minh không còn xa xỉ với người dùng, Lumi Việt
@@ -88,7 +88,7 @@ function Solution() {
                   <AiFillFire size={70} />
                 </div>
                 <h4>
-                  <a href="">Dự toán biệt thự thông minh</a>
+                  <a href="/details">Dự toán biệt thự thông minh</a>
                 </h4>
                 <p>
                   Bạn đang sở hữu ngôi biệt thự hiện đại, đẳng cấp nhưng thiếu
@@ -110,7 +110,7 @@ function Solution() {
                   <AiFillSketchCircle size={70} />
                 </div>
                 <h4>
-                  <a href="">Giải pháp chiếu sáng thông minh</a>
+                  <a href="/details">Giải pháp chiếu sáng thông minh</a>
                 </h4>
                 <p>
                   Hệ thống chiếu sáng đối với mỗi ngôi nhà đều vô cùng quan
