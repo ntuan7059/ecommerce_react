@@ -87,12 +87,17 @@ function Layout(props) {
             <Route exact path="/shop/checkout" component={PageCheckout} />
             <Route exact path="/shop/wishlist" component={PageWishlist} />
             <Route exact path="/shop/compare" component={PageCompare} />
+            <Route exact path="/details" component={NewsDetail} />
             <Route
               exact
               path="/shop/track-order"
               component={ShopPageTrackOrder}
             />
-            <Route exact path="/details" component={NewsDetail} />
+            <Route
+              exact
+              path="/shop/product/:productId"
+              component={ShopPageProduct}
+            />
 
             {/*
                         // Blog
